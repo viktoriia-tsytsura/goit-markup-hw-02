@@ -6,14 +6,24 @@
     --background-color-dark:#2F303A;
     --color-white: #FFFFFF;
     --background-color-light:#F5F4FA;
+    --color-black: #000; 
+    --button-active-color: #188CE8;
+    --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
-    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
 }
 ul {
     list-style: none;
+}
+
+li .current {
+    color: var(--accent-color);
 }
 
  .visually-hidden {
@@ -40,14 +50,13 @@ ul {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
 
     color: var(--accent-color);
     text-decoration: none;
 
 }
 .logo-header {
-    color: #000;
+    color: var(--color-black);
 
 }
 .site-nav-item,
@@ -109,7 +118,7 @@ ul {
 .hero-button:hover,
 .hero-button:focus
  {
-    background: #2196F3;
+    background: var(--button-active-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -129,7 +138,6 @@ ul {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
 
     text-transform: uppercase;
 }
@@ -137,7 +145,6 @@ ul {
 .benefits-list .benefits-description {
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
 .section-title {
@@ -147,24 +154,24 @@ ul {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 
 .team-section {
     background-color: var(--background-color-light);
 }
+.team-item {
+    background-color: var(--color-white);
+}
 .team-list .team-member {
     color: var(--title-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
 }
 .team-list .member-description {
     font-size: 16px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
 
 }
 
@@ -177,24 +184,22 @@ ul {
     }
     .footer-info .contacts-item,
     .footer-info .address-info {
-        color: rgba(255, 255, 255, 0.6);
+        color: var(--footer-contacts-color);
         font-style: normal;
         line-height: 1.71;
         font-weight: 400;
-        letter-spacing: 0.03em;
         text-decoration: none;
+
     }
     .footer-info .address-info {
-        color: #FFF;
+        color: var(--color-white);
     }
 
     
 /* Portfolio styles */
 
 .portfolio-section {
-    font-family: Roboto, sans-serif;
     color: var(--title-color);
-    background-color: var(--color-white);
 }
 .filter-item {
     background-color: var(--background-color-light);
@@ -202,7 +207,6 @@ ul {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
 
     cursor: pointer;
 }
@@ -226,6 +230,7 @@ ul {
     
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
 }
+
+
 
